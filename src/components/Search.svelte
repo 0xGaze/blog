@@ -1,5 +1,6 @@
 <script lang="ts">
-interface $$Props {}
+type $$Props = Record<string, never>;
+
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import Icon from "@iconify/svelte";
