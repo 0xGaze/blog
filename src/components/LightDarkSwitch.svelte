@@ -1,5 +1,5 @@
 <script lang="ts">
-type $$Props = Record<string, never>;
+interface $$Props { [key: string]: unknown;}
 
 import { AUTO_MODE, DARK_MODE, LIGHT_MODE } from "@constants/constants.ts";
 import I18nKey from "@i18n/i18nKey";
