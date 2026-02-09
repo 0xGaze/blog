@@ -1,4 +1,5 @@
 <script lang="ts">
+interface $$Props {}
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import Icon from "@iconify/svelte";
