@@ -16,8 +16,8 @@ export const siteConfig: SiteConfig = {
     fixed: false, // Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    enable: true,
+    src: "assets/images/blackhole.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false, // Display the credit text of the banner image
@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: "assets/images/Gaze.jpeg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: "0xGaze",
-  bio: "Windows Internals Enthusiast.",
+  bio: "Stare into the void",
   links: [
     {
       name: "Twitter",
@@ -64,11 +64,11 @@ export const profileConfig: ProfileConfig = {
       // `pnpm add @iconify-json/<icon-set-name>`
       url: "https://twitter.com",
     },
-    // {
-    //   name: "Steam",
-    //   icon: "fa6-brands:steam",
-    //   url: "https://store.steampowered.com",
-    // },
+    {
+      name: "Linked'in",
+      icon: "fa6-brands:linkedin",
+      url: "https://www.linkedin.com/in/clermont-judica%C3%ABl/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BxU%2FSDz0cRs2dy4BTAQgnBg%3D%3D",
+    },
     {
       name: "GitHub",
       icon: "fa6-brands:github",
@@ -86,5 +86,5 @@ export const licenseConfig: LicenseConfig = {
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
   // Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
   // Please select a dark theme, as this blog theme currently only supports dark background color
-  theme: "github-dark",
+  theme: "github-dark-high-contrast",
 };
