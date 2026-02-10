@@ -3,7 +3,7 @@ title: Inside the Windows Process
 published: 2026-02-10
 description: "A deep dive into the Windows Process"
 tags: ["Windows Internals", "C++"]
-category: Guides
+category: System Programming
 draft: false
 ---
 ## Introduction
