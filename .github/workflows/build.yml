@@ -39,27 +39,43 @@ jobs:
       - name: Run Astro Check
         run: pnpm astro check || true
 
-  build:
-    strategy:
-      matrix:
-        node: [20, 22]
-    runs-on: ubuntu-latest
-    name: Astro Build - Node ${{ matrix.node }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+build:
+  strategy:
+    matrix:
+      node: [20, 22]
+  runs-on: ubuntu-latest
+  name: Astro Build & Deploy - Node ${{ matrix.node }}
+  permissions:
+    contents: read
+    pages: write      # ← required
+    id-token: write   # ← required for deployment
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
-          cache: "pnpm"
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node }}
+        cache: "pnpm"
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
 
-      - name: Run Astro Build
-        run: pnpm astro build
+    - name: Build Astro site
+      run: pnpm astro build
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist          # ← Astro's default output folder
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
