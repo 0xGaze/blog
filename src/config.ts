@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
     position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: true, // Display the credit text of the banner image
-      text: "Source", // Credit text to be displayed
+      text: "Credit", // Credit text to be displayed
       url: "https://svs.gsfc.nasa.gov/14146/", // (Optional) URL link to the original artwork or artist's page
     },
   },
@@ -57,13 +57,13 @@ export const profileConfig: ProfileConfig = {
   name: "0xGaze",
   bio: "Stare into the void",
   links: [
-    {
-      name: "Twitter",
-      icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-      // You will need to install the corresponding icon set if it's not already included
-      // `pnpm add @iconify-json/<icon-set-name>`
-      url: "https://twitter.com",
-    },
+    // {
+    //   name: "Twitter",
+    //   icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+    //   // You will need to install the corresponding icon set if it's not already included
+    //   // `pnpm add @iconify-json/<icon-set-name>`
+    //   url: "https://twitter.com",
+    // },
     {
       name: "Linked'in",
       icon: "fa6-brands:linkedin",

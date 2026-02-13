@@ -2,8 +2,8 @@
 title: Inside the Windows Process
 published: 2026-02-10
 description: "A deep dive into the Windows Process"
-tags: ["Windows Internals", "C++"]
-category: System Programming
+tags: ["Windows", "WinDbg", "C++", "User Mode", "PEB"]
+category: Windows Internals
 draft: false
 ---
 ## Introduction
@@ -304,6 +304,6 @@ C:\Windows\System32\GDI32.dll
 C:\Windows\System32\win32u.dll
 C:\Windows\System32\gdi32full.dll
 ```
-This is exactly the information the Windows loader itself uses—and exactly what shellcode leverages to bootstrap execution.
+This is exactly the information the Windows loader itself uses and exactly what shellcode leverages to bootstrap execution.
 
 That's all for this article. I hope you learned something useful. If you have any review or feedback, please send me an email; I'll gladly read it. Until next time.
