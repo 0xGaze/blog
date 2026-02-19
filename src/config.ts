@@ -57,22 +57,22 @@ export const profileConfig: ProfileConfig = {
   name: "0xGaze",
   bio: "Stare into the void",
   links: [
-    // {
-    //   name: "Twitter",
-    //   icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-    //   // You will need to install the corresponding icon set if it's not already included
-    //   // `pnpm add @iconify-json/<icon-set-name>`
-    //   url: "https://twitter.com",
-    // },
     {
-      name: "Linked'in",
-      icon: "fa6-brands:linkedin",
-      url: "www.linkedin.com/in/clermont-judicaël",
+      name: "0xgaze",
+      icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+      // You will need to install the corresponding icon set if it's not already included
+      // `pnpm add @iconify-json/<icon-set-name>`
+      url: "https://x.com/0x_gaze",
     },
     {
       name: "GitHub",
       icon: "fa6-brands:github",
       url: "https://github.com/0xGaze",
+    },
+    {
+      name: "Linked'in",
+      icon: "fa6-brands:linkedin",
+      url: "https://linkedin.com/in/clermont-judicaël",
     },
   ],
 };

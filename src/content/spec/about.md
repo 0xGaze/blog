@@ -1,4 +1,3 @@
-# About
-Hello! My name is Clermont Judicael, I go by 0xGaze. I'm a Windows Internals enthusiast and self-taught. Cybersecurity is my passion, and right now I'm focusing on userland Windows Internals. I write articles on what I learn along the way to share my knowledge. Later, I will expand to more subjects, like reverse engineering, as I become more comfortable, and eventually the kernel.
+# Who am I?
 
-If you have any suggestion or just want to say hello, my e-mail is `0xgaze.blog@proton.me`.
+Hello! My name is Judicael. I'm a self-taught cybersecurity enthusiast, focusing mainly on Windows internals. I have a strong interest in red teaming and malware analysis, and I plan to make my blog lean more toward these subjects. If you have any suggestions or just want to say hello, feel free to email me at `0xgaze.blog@proton.me`.
